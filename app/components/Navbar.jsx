@@ -20,14 +20,14 @@ const Navbar = () => {
             icon: (
                 <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://www.linkedin.com/in/aman-singh-433240225/",
         },
         {
             title: "GitHub",
             icon: (
                 <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://github.com/Aman8244/Data-Monk-Assessment",
         },
     ];
     return (
