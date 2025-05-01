@@ -11,7 +11,7 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox";
-import { IndianRupeeIcon } from "lucide-react";
+import { ArrowRight, IndianRupeeIcon } from "lucide-react";
 import { Share } from "lucide-react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
@@ -353,16 +353,16 @@ const FormPrintingCost = () => {
 
                 </div>
             </form>
-            <div className="flex items-center w-full justify-center gap-3 md:gap-4">
+            <div className="flex items-center w-full flex-row flex-wrap justify-center gap-3 md:gap-4">
                 <button
-                    className="px-1 md:px-4 cursor-pointer  h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
+                    className="px-1 md:px-4 flex items-center justify-center cursor-pointer  h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
                     onClick={downloadPDF}
                 >
-                    Download &rarr;
+                    Download PDF <ArrowRight  className="ml-2 md:ml-2" />
                     <BottomGradient />
                 </button>
                 <button
-                    className=" flex cursor-pointer gap-2 items-center justify-center px-1 md:px-4  h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
+                    className=" flex cursor-pointer items-center justify-center px-1 md:px-4  h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
                     onClick={SharePDF}
                      >
                     <Share className="mr-2" /> Share
